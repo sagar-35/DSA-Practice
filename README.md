@@ -32,7 +32,5 @@ This is where I will be learning and practicing DSA concepts step-by-step.
 ## 🛠️ Languages Used
 
 - Python (main language)
-
+  
 ---
-
-### Let's crush DSA one step at a time!

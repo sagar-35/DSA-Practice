@@ -1,26 +1,19 @@
-# Logic practice begginer level
-# Bitwise XOR
+# Factorial 
+# Step-1 Function
 
-a = 10
-b = 20
+def factorial(n):
+# Step-2 Variable 
+    result = 1
+# Step-3 Loop for multiply by multiple time
+    for i in range(1, n+1):
+        result = result * i
 
-a = a^b 
-b = a^b 
-a = a^b 
+# Step-4 return
+    return result
 
-print("a: ", a)
-print("b: ", b)
+# Step-5 User input
+num = int(input("Enter any number for factorial: "))
+print(f"{num}! = ",factorial(num))
 
-#✅ Method 1: Using Arithmetic Operators
-
-a = 5
-b = 3
-
-a = a + b # a = 5 + 3 = 8
-b = a - b # b = 8 - 3 = 5
-a = a - b # a = 8 - 5 = 3 
-
-print("a: ", a)
-print("b: ", b)
 
 

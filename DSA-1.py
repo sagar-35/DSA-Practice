@@ -1,19 +1,14 @@
-# Factorial 
-# Step-1 Function
-
+# Factorail Practice
 def factorial(n):
-# Step-2 Variable 
-    result = 1
-# Step-3 Loop for multiply by multiple time
-    for i in range(1, n+1):
-        result = result * i
+    if n < 0:
+        return "Negative number is not a factorial."
+    elif n == 1 or n == 0:
+        return 1 
+    else:
+        result = 1
+        for i in range(2, n+1):
+            result *= i 
+        return result
 
-# Step-4 return
-    return result
-
-# Step-5 User input
-num = int(input("Enter any number for factorial: "))
-print(f"{num}! = ",factorial(num))
-
-
-
+num = int(input("Enter a number: "))
+print(f"{num}! = ", factorial(num))

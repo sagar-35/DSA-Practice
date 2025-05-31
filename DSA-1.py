@@ -1,18 +1,9 @@
-# Problems vowels in a string
-# in: Hello World
-# out: 3
-# START
-# Input user theke
-# count set korbo 0 
-# for each character in string:
-#       if character is vowel(a, e, i, o, u) or uppercase version:
-#       count +1
-# print count
-
-text = input("Enter any string: ")
-count = 0
-
-for chr in text:
-    if chr.isalpha() and chr.lower() in "aeiou":
-        count += 1
-print("Number of vowel: ", count)
+#Palindrome checker
+text = input("Enter a string: ")
+reverse = ""
+for i in range(len(text)-1, -1, -1):
+    reverse += text[i]
+if text == reverse:
+    print("Yes! It is a palindrome.")
+else:
+    print("Sorry! It's not a palindrome")

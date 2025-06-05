@@ -1,19 +1,25 @@
-'''
-START
-Input nibo ekta number
-Step 1:
-    sum = 0
-Step 2:
-    Prottek digit niye:
-        sum er sathe add korbo
-Step 3:
-    Output korbo sum
-END
-'''
-num = input("Enter a number: ")
-total = 0
+'''START
+1. List create korbo
+2. Even and odd count er jonno duita variable banabo (even = 0, odd = 0)
+3. Loop chalabo list er upor:
+    jodi number % 2 == 0:
+        even++
+    na hole:
+        odd++
+4. Output: even count and odd count
+END'''
 
-for digits in num:
-    total += int(digits)
+list = [1,2,3,4,5,6,7,8,9]
 
-print(f"Sum of the digits is: {total}")
+even_count = 0
+odd_count = 0
+
+for num in list:
+    if num % 2 == 0:
+        even_count += 1 
+    else:
+        odd_count += 1
+    
+print(f"Even = {even_count}")
+print(f"Odd = {odd_count}")
+

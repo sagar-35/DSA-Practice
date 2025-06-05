@@ -1,19 +1,19 @@
 '''
 START
 Input nibo ekta number
-1. Convert number to string
-2. Reverse the string
-3. Compare original string with reversed string
-    If same:
-        Print "Palindrome"
-    Else:
-        Print "Not Palindrome"
+Step 1:
+    sum = 0
+Step 2:
+    Prottek digit niye:
+        sum er sathe add korbo
+Step 3:
+    Output korbo sum
 END
 '''
-num = input("Enter a number: ") #converted num to string
-rev = num[::-1] #reversed stirng
-if num == rev:
-    print(f"{num} is a Palindrome number.")
-else:
-    print(f"{num} is not a Palindrome number.")
+num = input("Enter a number: ")
+total = 0
 
+for digits in num:
+    total += int(digits)
+
+print(f"Sum of the digits is: {total}")

@@ -1,25 +1,27 @@
-'''START
-1. List create korbo
-2. Even and odd count er jonno duita variable banabo (even = 0, odd = 0)
-3. Loop chalabo list er upor:
-    jodi number % 2 == 0:
-        even++
-    na hole:
-        odd++
-4. Output: even count and odd count
-END'''
+'''
+START
+INPUT number1
+INPUT number2
+INPUT number3
+IF number1 >= number2 AND number1 >= number3 THEN
+    largest ← number1
+ELSE IF number2 >= number1 AND number2 >= number3 THEN
+    largest ← number2
+ELSE
+    largest ← number3
+END IF
+OUTPUT "The largest number is", largest
+END
+'''
+num1 = float(input("Enter Number 1: "))
+num2 = float(input("Enter Number 2: "))
+num3 = float(input("Enter Number 3: "))
 
-list = [1,2,3,4,5,6,7,8,9]
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
 
-even_count = 0
-odd_count = 0
-
-for num in list:
-    if num % 2 == 0:
-        even_count += 1 
-    else:
-        odd_count += 1
-    
-print(f"Even = {even_count}")
-print(f"Odd = {odd_count}")
-
+print(f"The largest number is {largest}.")
